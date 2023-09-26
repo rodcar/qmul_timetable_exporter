@@ -9,7 +9,7 @@ date_end = '2024-12-31'
 # QMUL+ timetable endpoint
 qmul_timetable_endpoint = f'https://qmul.ombiel.co.uk/campusm/sso/cal2/Course%20Timetable?start={date_start}T23%3A00%3A00.000Z&end={date_end}T23%3A59%3A59.000Z'
 
-# replace with your own QMUL+ cookie after log in (throuh Chrome Dev Tools)
+# replace with your own QMUL+ cookie after log in (through Chrome Dev Tools)
 cookie = ''
 
 response = requests.get(qmul_timetable_endpoint, headers={'Cookie': cookie})
